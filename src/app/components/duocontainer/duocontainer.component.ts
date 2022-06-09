@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-duocontainer',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./duocontainer.component.scss']
 })
 export class DuocontainerComponent implements OnInit {
+
+  @Input() imgSrc!: string;
 
   constructor() { }
 
