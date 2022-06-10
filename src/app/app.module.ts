@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { DuocontainerComponent } from './components/duocontainer/duocontainer.component';
+import { AccordianComponent } from './components/accordian/accordian.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    DuocontainerComponent
+    DuocontainerComponent,
+    AccordianComponent
   ],
   imports: [
     BrowserModule

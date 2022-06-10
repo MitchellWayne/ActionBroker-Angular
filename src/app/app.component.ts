@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ActionBroker-Angular';
+
+  onCloseAllEvent: EventEmitter<any> = new EventEmitter();
+
+
+  collapseAccordians() {
+    this.onCloseAllEvent.emit();
+  }
 }

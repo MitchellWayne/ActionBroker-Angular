@@ -1,0 +1,27 @@
+@use "~/src/defaults" as d;
+
+.Accordian {
+  &__header {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+      @include d.button-accordian;
+      text-align: center;
+      aspect-ratio: 1;
+      height: 1em;
+    }
+  }
+
+  &__title {
+    margin: 0 0 0 .75em;
+  }
+
+  &__text {
+    margin: .25em 0 0 2em;
+    line-height: 1.5em;
+    font-size: .75em;
+  }
+}

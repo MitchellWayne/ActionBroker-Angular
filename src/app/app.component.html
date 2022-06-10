@@ -52,7 +52,20 @@
       Easily deployed across any organization of any scale. 
       Unite teams, tools, and systems while maintaining flexibility in how teams prefer to work.
     </p>
-    <div>Placeholder accordian</div>
-    <div>Placeholder accordian</div>
+    <div class="AccordianMenu">
+      <app-accordian
+        title = "Trade with the best"
+        text = "Trade Binary Options with the best platform, on a wide selection of assets, with high payouts, lightning-fast order execution and get personal customer support around the clock, fast withdrawals and the expertise of industry leaders."
+        [onCloseAllEvent]="onCloseAllEvent"
+        (closeAllEvent)="collapseAccordians()"
+        [default] = "true"
+      ></app-accordian>
+      <app-accordian
+        title = "Flexibility"
+        text = "Teams on various devices can work entirely virtualized from the data center with NVIDIA RTX Virtual Workstations (vWS) or connect to the same Omniverse Enterprise environment using a local RTX professional workstation or notebook."
+        [onCloseAllEvent]="onCloseAllEvent"
+        (closeAllEvent)="collapseAccordians()"
+      ></app-accordian>
+    </div>
   </app-duocontainer>
 </div>

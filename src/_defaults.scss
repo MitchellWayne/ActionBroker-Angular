@@ -36,3 +36,23 @@ $pink: #ED589D;
     background-color: $blue;
   }
 }
+
+@mixin button-accordian {
+  padding-bottom: .1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $blue;
+  font-size: .75em;
+  font-family: serif;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1.5px solid $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

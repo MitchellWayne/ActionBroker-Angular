@@ -1,0 +1,8 @@
+<div class="Accordian">
+  <span class="Accordian__header">
+    <button *ngIf="!active" (click)="expand()" class="Accordian__expand">+</button>
+    <button *ngIf="active" class="Accordian__collapse">-</button>
+    <h2 class="Accordian__title">{{title}}</h2>
+  </span>
+  <p *ngIf="active" class="Accordian__text">{{text}}</p>
+</div>
