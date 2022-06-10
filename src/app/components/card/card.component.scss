@@ -1,0 +1,20 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #16182D0D;
+
+  .Card__accent {
+    margin-top: -5.5em;
+    width: 60%;
+  }
+
+  .Card__laurel {
+    margin-top: -1.6em;
+    width: 20%;
+  }
+}
