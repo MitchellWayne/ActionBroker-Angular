@@ -45,7 +45,7 @@
   </div>
 
   <app-duocontainer
-    imgSrc = "assets/images/platforms-trade-with-the-best.png"
+    [imgSrc] = "accordianImg"
   >
     <h1 class="title">Platforms</h1>
     <p class="subtext">
@@ -57,14 +57,14 @@
         title = "Trade with the best"
         text = "Trade Binary Options with the best platform, on a wide selection of assets, with high payouts, lightning-fast order execution and get personal customer support around the clock, fast withdrawals and the expertise of industry leaders."
         [onCloseAllEvent]="onCloseAllEvent"
-        (closeAllEvent)="collapseAccordians()"
+        (closeAllEvent)="collapseAccordians('assets/images/platforms-trade-with-the-best.png')"
         [default] = "true"
       ></app-accordian>
       <app-accordian
         title = "Flexibility"
         text = "Teams on various devices can work entirely virtualized from the data center with NVIDIA RTX Virtual Workstations (vWS) or connect to the same Omniverse Enterprise environment using a local RTX professional workstation or notebook."
         [onCloseAllEvent]="onCloseAllEvent"
-        (closeAllEvent)="collapseAccordians()"
+        (closeAllEvent)="collapseAccordians('assets/images/platforms-flexibility.png')"
       ></app-accordian>
     </div>
   </app-duocontainer>

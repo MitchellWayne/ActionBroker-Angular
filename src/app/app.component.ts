@@ -8,10 +8,12 @@ import { Component, EventEmitter } from '@angular/core';
 export class AppComponent {
   title = 'ActionBroker-Angular';
 
+  accordianImg = "assets/images/platforms-trade-with-the-best.png";
   onCloseAllEvent: EventEmitter<any> = new EventEmitter();
 
 
-  collapseAccordians() {
+  collapseAccordians(img: string) {
     this.onCloseAllEvent.emit();
+    this.accordianImg = img;
   }
 }
