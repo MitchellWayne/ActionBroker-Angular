@@ -12,6 +12,8 @@ export class CardComponent implements OnInit {
   @Input() tier!: string;
   @Input() pricing!: string;
   @Input() subtext!: string;
+  @Input() withdraw!: boolean;
+  @Input() relation!: boolean;
 
   constructor() { }
 

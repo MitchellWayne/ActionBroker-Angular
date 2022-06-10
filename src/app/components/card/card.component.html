@@ -7,12 +7,36 @@
   <hr class="Card__separator">
   <div class="Card__features">
     <ul>
-      <li>Max number of open orders</li>
-      <li>Max single investment</li>
-      <li>Max combined investment</li>
-      <li>Min investment</li>
-      <li>Free withdrawals once a week</li>
-      <li>Relationship Manage</li>
+      <li>
+        <p class="desc">Max number of open orders</p>
+        <span class="benefit">{{"5"}}</span>
+      </li>
+      <li>
+        <p class="desc">Max single investment</p>
+        <span class="benefit">${{"1000"}}</span>
+      </li>
+      <li>
+        <p class="desc">Max combined investment</p>
+        <span class="benefit">${{"2000"}}</span>
+      </li>
+      <li>
+        <p class="desc">Min investment</p>
+        <span class="benefit">{{"1"}}</span>
+      </li>
+      <li>
+        <p class="desc">Free withdrawals once a week</p>
+        <span class="benefit">
+          <img *ngIf="withdraw" src="assets/logos-and-icons/checkmark.png" alt="">
+          <img *ngIf="!withdraw" src="assets/logos-and-icons/x-icon.png" alt="">
+        </span>
+      </li>
+      <li>
+        <p class="desc">Relationship Manage</p>
+        <span class="benefit">
+          <img *ngIf="relation" src="assets/logos-and-icons/checkmark.png" alt="">
+          <img *ngIf="!relation" src="assets/logos-and-icons/x-icon.png" alt="">
+        </span>
+      </li>
     </ul>
   </div>
   <hr class="Card__separator">
