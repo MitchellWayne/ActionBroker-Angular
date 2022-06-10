@@ -8,6 +8,18 @@ $yellow: #FFB763;
 $green: #9C9C9C;
 $pink: #ED589D;
 
+@mixin mobile {
+  @media only screen and (max-width: 550px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 1600px){
+    @content;
+  }
+}
+
 @mixin button-primary {
   color: $white;
   font-size: .7em;
