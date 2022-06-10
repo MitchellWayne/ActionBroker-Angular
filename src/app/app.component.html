@@ -1,4 +1,5 @@
 <div class="App">
+
   <app-duocontainer
     imgSrc = "assets/images/get-in-early-on-the-next-big-thing.png"
   >
@@ -44,14 +45,13 @@
     </div>
   </div>
 
-  <app-duocontainer
-    [imgSrc] = "accordianImg"
-  >
+  <app-duocontainer [imgSrc] = "accordianImg">
     <h1 class="title">Platforms</h1>
     <p class="subtext">
       Easily deployed across any organization of any scale. 
       Unite teams, tools, and systems while maintaining flexibility in how teams prefer to work.
     </p>
+
     <div class="AccordianMenu">
       <app-accordian
         title = "Trade with the best"
@@ -67,5 +67,6 @@
         (closeAllEvent)="collapseAccordians('assets/images/platforms-flexibility.png')"
       ></app-accordian>
     </div>
+
   </app-duocontainer>
 </div>
