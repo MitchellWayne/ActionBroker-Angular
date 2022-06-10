@@ -1,4 +1,6 @@
 <div class="Duocontainer">
-  <img [src]="imgSrc" alt="">
-  <ng-content></ng-content>
+  <img class="Duocontainer__img Duocontainer__inner" [src]="imgSrc" alt="">
+  <div class="Duocontainer__content Duocontainer__inner">
+    <ng-content></ng-content>
+  </div>
 </div>
