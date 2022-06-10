@@ -91,4 +91,13 @@
       }
     }
   }
+
+  &__btn {
+    @include d.button-secondary-l;
+
+    margin: 1.75em 0;
+
+    aspect-ratio: 6;
+    width: 84%;
+  }
 }

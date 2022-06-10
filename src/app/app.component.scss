@@ -26,27 +26,11 @@
   }
 
   .button {
+    @include d.button-primary;
     margin-top: 32px;
 
     aspect-ratio: 3.4;
-
-    color: d.$white;
-    font-size: .7em;
-    font-weight: 400;
-
-    background-color: d.$blue;
-    border-radius: 2em;
-    border: none;
-
-    &:hover {
-      background-color: #28348D;
-    }
-  }
-
-  app-duocontainer {
-    .button {
-      width: 10em;
-    }
+    width: 10em;
   }
 }
 

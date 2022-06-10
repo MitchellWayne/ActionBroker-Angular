@@ -8,3 +8,31 @@ $yellow: #FFB763;
 $green: #9C9C9C;
 $pink: #ED589D;
 
+@mixin button-primary {
+  color: $white;
+  font-size: .7em;
+  font-weight: 400;
+
+  background-color: $blue;
+  border-radius: 2em;
+  border: none;
+
+  &:hover {
+    background-color: #28348D;
+  }
+}
+
+@mixin button-secondary-l {
+  color: $blue;
+  font-size: .7em;
+  font-weight: 400;
+
+  background-color: transparent;
+  border-radius: 2em;
+  border: 1px solid $blue;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
