@@ -3,7 +3,9 @@
 .App {
   display: flex;
   flex-direction: column;
+
   font-family: "Inter";
+  color: d.$darkblue;
 
   app-duocontainer {
     .title {
@@ -16,10 +18,9 @@
     .subtext {
       margin-top: 24px;
 
-      color: d.$darkblue;
       opacity: 0.7;
 
-      font-size: .65em;
+      font-size: .7em;
       font-weight: 400;
 
       line-height: 150%;
@@ -27,6 +28,21 @@
 
     .button {
       margin-top: 32px;
+
+      aspect-ratio: 3.4;
+      width: 10em;
+
+      color: d.$white;
+      font-size: .7em;
+      font-weight: 400;
+
+      background-color: d.$blue;
+      border-radius: 2em;
+      border: none;
+
+      &:hover {
+        background-color: #28348D;
+      }
     }
   }
 }
