@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   @Input() subtext!: string;
 
   /*
-    The following all have the same values atm
+    The following all have the same values at the moment
     Will be required if we have different properties on these for each tier
   */
   // @Input() maxOrders!: string;

@@ -4,6 +4,7 @@
     <button *ngIf="active" class="Accordian__collapse">-</button>
     <h2 class="Accordian__title">{{title}}</h2>
   </span>
+  <!-- This img is only visible for mobile / tablet breakpoints -->
   <img *ngIf="active" class="Accordian__img" [src]="imgSrc" alt="">
   <p *ngIf="active" class="Accordian__text">{{text}}</p>
 </div>
