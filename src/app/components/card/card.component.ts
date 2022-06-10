@@ -12,6 +12,16 @@ export class CardComponent implements OnInit {
   @Input() tier!: string;
   @Input() pricing!: string;
   @Input() subtext!: string;
+
+  /*
+    The following all have the same values atm
+    Will be required if we have different properties on these for each tier
+  */
+  // @Input() maxOrders!: string;
+  // @Input() maxSingleInvest!: string;
+  // @Input() maxCombinedInvest!: string;
+  // @Input() minInvest!: string;
+
   @Input() withdraw!: boolean;
   @Input() relation!: boolean;
 
