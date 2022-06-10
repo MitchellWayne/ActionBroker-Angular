@@ -17,6 +17,7 @@ import { trigger, transition, animate, style } from '@angular/animations';
 export class DuocontainerComponent implements OnInit {
 
   @Input() imgSrc!: string;
+  @Input() hideOnMobile: boolean = false;
 
   constructor() { }
 

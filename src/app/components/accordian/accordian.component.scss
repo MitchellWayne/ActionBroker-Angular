@@ -24,4 +24,27 @@
     line-height: 1.5em;
     font-size: .75em;
   }
+
+  &__img {
+    display: none;
+    width: 100%;
+  }
+}
+
+@include d.tablet {
+  .Accordian {
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@include d.mobile {
+  .Accordian {
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
 }

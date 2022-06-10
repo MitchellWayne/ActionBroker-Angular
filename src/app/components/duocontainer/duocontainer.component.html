@@ -1,5 +1,7 @@
 <div class="Duocontainer">
-  <img class="Duocontainer__img Duocontainer__inner" [src]="imgSrc" alt="" [@fade]="imgSrc">
+  <img class="Duocontainer__img Duocontainer__inner"
+      [ngClass]="{'Duocontainer__img--hidden': (hideOnMobile)}"
+      [src]="imgSrc" alt="" [@fade]="imgSrc">
   <div class="Duocontainer__content Duocontainer__inner">
     <ng-content></ng-content>
   </div>

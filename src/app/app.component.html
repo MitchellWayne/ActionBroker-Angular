@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <app-duocontainer [imgSrc] = "accordianImg">
+  <app-duocontainer [imgSrc] = "accordianImg" [hideOnMobile] = true>
     <h1 class="title">Platforms</h1>
     <p class="subtext">
       Easily deployed across any organization of any scale. 
@@ -59,12 +59,14 @@
         [onCloseAllEvent]="onCloseAllEvent"
         (closeAllEvent)="collapseAccordians('assets/images/platforms-trade-with-the-best.png')"
         [default] = "true"
+        [imgSrc] = "accordianImg"
       ></app-accordian>
       <app-accordian
         title = "Flexibility"
         text = "Teams on various devices can work entirely virtualized from the data center with NVIDIA RTX Virtual Workstations (vWS) or connect to the same Omniverse Enterprise environment using a local RTX professional workstation or notebook."
         [onCloseAllEvent]="onCloseAllEvent"
         (closeAllEvent)="collapseAccordians('assets/images/platforms-flexibility.png')"
+        [imgSrc] = "accordianImg"
       ></app-accordian>
     </div>
 

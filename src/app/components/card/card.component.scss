@@ -101,3 +101,27 @@
     width: 84%;
   }
 }
+
+@include d.tablet {
+  .Card {
+    &__laurel {
+      width: 25%;
+    }
+
+    &__btn {
+      aspect-ratio: 7;
+    }
+  }
+}
+
+@include d.mobile {
+  .Card {
+    &__laurel {
+      width: 25%;
+    }
+
+    &__btn {
+      aspect-ratio: 7;
+    }
+  }
+}
