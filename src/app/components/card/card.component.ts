@@ -9,6 +9,9 @@ export class CardComponent implements OnInit {
 
   @Input() accentImg!: string;
   @Input() laurelImg!: string;
+  @Input() tier!: string;
+  @Input() pricing!: string;
+  @Input() subtext!: string;
 
   constructor() { }
 

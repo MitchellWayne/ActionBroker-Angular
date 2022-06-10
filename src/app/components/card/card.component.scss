@@ -1,3 +1,5 @@
+@use "~/src/defaults" as d;
+
 .Card {
   display: flex;
   flex-direction: column;
@@ -8,13 +10,62 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px #16182D0D;
 
-  .Card__accent {
+  font-family: "Inter";
+  color: d.$darkblue;
+
+  &__accent {
     margin-top: -5.5em;
     width: 60%;
   }
 
-  .Card__laurel {
+  &__laurel {
     margin-top: -1.6em;
     width: 20%;
+  }
+
+  &__tier {
+    margin-top: .5em;
+  }
+
+  &__pricing {
+    margin-top: .5em;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 2em;
+
+    &--currency {
+      margin: .35em .2em 0 0;
+      align-self: flex-start;
+    }
+  }
+
+  &__subtext {
+    margin: 5% 5%;
+
+    opacity: 0.8;
+    text-align: center;
+    font-size: .7em;
+  }
+
+  &__separator {
+    width: 90%;
+    opacity: 0.1;
+    border: .5px solid d.$darkblue;
+  }
+
+  &__features {
+    margin: 1em 5%;
+
+
+    ul {
+      list-style: none;
+
+      li {
+        opacity: 0.7;
+        font-size: .7em;
+      }
+    }
   }
 }

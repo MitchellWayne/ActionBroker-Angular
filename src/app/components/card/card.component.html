@@ -1,8 +1,10 @@
 <div class="Card">
   <img [src]="accentImg" alt="" class="Card__accent">
   <img [src]="laurelImg" alt="" class="Card__laurel">
-  <h1 class="Card__price">${{"11.11"}}</h1>
-  <p class="Card__subtext">{{"Subtext"}}</p>
+  <h1 class="Card__tier">{{tier}}</h1>
+  <h2 class="Card__pricing"><span class="Card__pricing--currency">$</span>{{pricing}}</h2>
+  <p class="Card__subtext">{{subtext}}</p>
+  <hr class="Card__separator">
   <div class="Card__features">
     <ul>
       <li>Max number of open orders</li>
@@ -13,5 +15,6 @@
       <li>Relationship Manage</li>
     </ul>
   </div>
+  <hr class="Card__separator">
   <button class="Card__btn">Open Account</button>
 </div>
